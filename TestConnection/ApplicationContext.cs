@@ -2,9 +2,9 @@
 
 namespace TestConnection
 {
-    class ApplicationContex:DbContext 
+    class ApplicationContext:DbContext 
     {
-        public ApplicationContex():base("DefaultConnection")
+        public ApplicationContext():base("DefaultConnection")
         {
         }
         public DbSet<Phone> Phones { get; set; }
