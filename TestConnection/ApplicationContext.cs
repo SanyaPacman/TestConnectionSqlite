@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using TestConnection.Tables;
 
 namespace TestConnection
 {
@@ -8,5 +9,7 @@ namespace TestConnection
         {
         }
         public DbSet<Phone> Phones { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+
     }
 }

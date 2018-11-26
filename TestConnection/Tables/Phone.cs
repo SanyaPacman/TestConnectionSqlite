@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace TestConnection
+namespace TestConnection.Tables
 {
-    public class Phone : INotifyPropertyChanged
+    public class Phone : Entity
     {
         private string title;
         private string company;
-        private int price;
-
-        public int Id { get; set; }
+        private int price;        
 
         public string Title
         {
@@ -42,13 +40,6 @@ namespace TestConnection
                 price = value;
                 OnPropertyChanged("Price");
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string prop = "")
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

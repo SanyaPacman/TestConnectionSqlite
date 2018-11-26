@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows;
+using TestConnection.Tables;
 
 namespace TestConnection
 {

@@ -2,16 +2,18 @@
 using System.ComponentModel;
 using System.Data.Entity;
 using System.Runtime.CompilerServices;
+using TestConnection.Tables;
+
 
 namespace TestConnection
 {
     class ApplicationViewModel : INotifyPropertyChanged
     {
-        ApplicationContext db;
-        RelayCommand addCommand;
-        RelayCommand editCommand;
-        RelayCommand deleteCommand;
-        IEnumerable<Phone> phones;
+        ApplicationContext db;//связь с дб
+        RelayCommand addCommand;// команда на добавление
+        RelayCommand editCommand;// команда на изменение
+        RelayCommand deleteCommand;// команда на удаление
+        IEnumerable<Phone> phones; // много телефонов
 
         public IEnumerable<Phone> Phones
         {
@@ -27,7 +29,7 @@ namespace TestConnection
         {
             db = new ApplicationContext();
             db.Phones.Load();
-            Phones = db.Phones.Local.ToBindingList();
+            Phones = db.Phones.Local.ToBindingList();//почему биндинглист?
         }
         // команда добавления
         public RelayCommand AddCommand
