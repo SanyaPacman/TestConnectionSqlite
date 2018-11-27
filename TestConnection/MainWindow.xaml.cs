@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows;
+using TestConnection.Tables;
 
 namespace TestConnection
 {
@@ -46,7 +47,7 @@ namespace TestConnection
             PhoneWindow phoneWindow = new PhoneWindow(new Phone
             {
                 Id = phone.Id,
-                Company = phone.Company,
+                CompanyId = phone.CompanyId,
                 Price = phone.Price,
                 Title = phone.Title
             });
@@ -57,7 +58,7 @@ namespace TestConnection
                 phone = db.Phones.Find(phoneWindow.Phone.Id);
                 if (phone != null)
                 {
-                    phone.Company = phoneWindow.Phone.Company;
+                    phone.CompanyId = phoneWindow.Phone.CompanyId;
                     phone.Title = phoneWindow.Phone.Title;
                     phone.Price = phoneWindow.Phone.Price;
                     db.Entry(phone).State = EntityState.Modified;

@@ -97,7 +97,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Phone.cs" />
+    <Compile Include="Tables\Entity.cs" />
+    <Compile Include="Tables\Phone.cs" />
     <Compile Include="PhoneWindow.xaml.cs">
       <DependentUpon>PhoneWindow.xaml</DependentUpon>
     </Compile>

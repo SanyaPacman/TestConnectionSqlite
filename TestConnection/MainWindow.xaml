@@ -16,7 +16,7 @@
                 <DataTemplate>
                     <StackPanel>
                         <TextBlock Text="{Binding Title}" FontSize="16" />
-                        <TextBlock Text="{Binding Company}" FontSize="12" />
+                        <TextBlock Text="{Binding CompanyId}" FontSize="12" />
                         <TextBlock Text="{Binding Price}" FontSize="13" />
                     </StackPanel>
                 </DataTemplate>
