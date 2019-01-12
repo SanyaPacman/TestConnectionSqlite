@@ -11,8 +11,10 @@ namespace TestConnection.Tables
     public class Phone : Entity
     {
         private string title;
-        private int company;
+        private int companyId;
         private int price;
+
+        public Company Company { get; set; }
 
         public string Title
         {
@@ -25,10 +27,10 @@ namespace TestConnection.Tables
         }
         public int CompanyId
         {
-            get { return company; }
+            get { return companyId; }
             set
             {
-                company = value;
+                companyId = value;
                 OnPropertyChanged("CompanyId");
             }
         }

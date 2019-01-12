@@ -23,7 +23,9 @@ namespace TestConnection
 
             db = new ApplicationContex();
             db.Phones.Load();
+            db.Companies.Load();
             this.DataContext = db.Phones.Local.ToBindingList();
+            
         }
         // добавление
         private void Add_Click(object sender, RoutedEventArgs e)

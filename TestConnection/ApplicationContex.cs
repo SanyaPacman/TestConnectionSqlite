@@ -9,5 +9,6 @@ namespace TestConnection
         {
         }
         public DbSet<Phone> Phones { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

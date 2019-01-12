@@ -18,10 +18,11 @@
                         <TextBlock Text="{Binding Title}" FontSize="16" />
                         <TextBlock Text="{Binding CompanyId}" FontSize="12" />
                         <TextBlock Text="{Binding Price}" FontSize="13" />
+                        <TextBlock  Text="{Binding Company.CompanyName}" Name="TestTXT" Grid.Column="1" Grid.Row="2" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-        </ListBox>
+        </ListBox>        
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Добавить" Margin="10" Click="Add_Click" />
             <Button Content="Изменить" Margin="10" Click="Edit_Click"  />

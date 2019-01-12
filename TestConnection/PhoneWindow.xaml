@@ -30,9 +30,9 @@
         <TextBlock Text="Цена" Grid.Row="2" />
 
         <TextBox Text="{Binding Title}" Grid.Column="1" />
-        <TextBox Text="{Binding Company}" Grid.Column="1" Grid.Row="1" />
+        <TextBox Text="{Binding CompanyId}" Grid.Column="1" Grid.Row="1" />
         <TextBox Text="{Binding Price}" Grid.Column="1" Grid.Row="2" />
-
+        
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
             <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="5">OK</Button>
             <Button IsCancel="True" MinWidth="60" Margin="5">Отмена</Button>

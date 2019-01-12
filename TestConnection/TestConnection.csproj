@@ -97,6 +97,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tables\Company.cs" />
     <Compile Include="Tables\Entity.cs" />
     <Compile Include="Tables\Phone.cs" />
     <Compile Include="PhoneWindow.xaml.cs">
@@ -120,7 +121,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="DB.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
